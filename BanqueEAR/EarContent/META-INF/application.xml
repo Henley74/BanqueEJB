@@ -3,7 +3,7 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/application_5.xsd">
-  <display-name>Contact web application</display-name>
+  <display-name>Banque web application</display-name>
   <module>
     <web>
       <web-uri>BanqueWeb.war</web-uri>

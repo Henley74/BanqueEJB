@@ -1,10 +1,15 @@
+package compteBancaire;
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
-public class CompteBancaire {
+@Table(name = "Comptebancaire")
+public class CompteBancaire implements Serializable {
 
 	@Id
 	@GeneratedValue (strategy=GenerationType.AUTO)
@@ -16,7 +21,6 @@ public CompteBancaire(){}
 public CompteBancaire(int id, int solde){
 	this.id = id;
 	this.solde = solde;
-	
 }
 
 public int getId() {

@@ -6,6 +6,7 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
 import connexion.ConnexionManagerRemote;
+import ejbCompte.CompteManagerRemote;
 
 public class EjbLocator {
 	private static Context ctx;
@@ -34,16 +35,12 @@ public class EjbLocator {
 		return getEjb(ConnexionManagerRemote.class, "ConnexionManager");
 	}
 	
-	/*public GardienManagerRemote getGardien(){
-		return getEjb(GardienManagerRemote.class, "GardienManager");
+	
+	public CompteManagerRemote getCompteManager() {
+		return getEjb(CompteManagerRemote.class, "CompteManager");
 	}
 	
-	public MatchHockeyManagerRemote getMatchHockey(){
-		return getEjb(MatchHockeyManagerRemote.class, "MatchHockeyManager");
-	}
-	
-	public StatistiqueManagerRemote getStatistique(){
-		return getEjb(StatistiqueManagerRemote.class, "StatistiqueManager");
-	}*/ // supprimer/corriger
+
+
 	
 }
